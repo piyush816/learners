@@ -1,0 +1,176 @@
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+:root {
+  --primary: #0892d0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  text-transform: capitalize;
+}
+
+/* header starts  */
+
+.header {
+  background-image: url("./images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: var(--primary);
+  background-blend-mode: soft-light;
+  color: #fff;
+}
+.header-sm {
+  min-height: 40vh;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.header .info p {
+  width: min(800px, 95%);
+  margin-inline: auto;
+}
+/* header ends   */
+
+/* features course starts  */
+
+#featured-courses .card .card-body {
+  height: 50%;
+  margin-top: 0.8rem;
+}
+
+#featured-courses .card .card-text {
+  font-size: 1.2rem;
+}
+
+/* features course end */
+
+/* services starts  */
+
+#services {
+  background-color: #0891d00e;
+}
+
+#services .card:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  transform: scale(1.05);
+}
+#services .card-text {
+  font-size: 0.92rem;
+}
+
+/* services end  */
+
+/* courses starts  */
+#course-header {
+  background-image: url("./images/courses.jpg");
+}
+
+/* courses ends */
+
+/* footer starts  */
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+/* footer ends  */
+
+/* uilities starts  */
+section {
+  padding: 5rem 0;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.card {
+  transition: all 200ms ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.button-primary {
+  background-color: var(--primary) !important;
+  color: #fff;
+}
+.button-primary:hover {
+  background-color: #0581bb !important;
+}
+
+.button-secondary {
+  background-color: #fff !important;
+  color: var(--primary);
+}
+
+.course-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 20rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-card img {
+  height: 65%;
+  object-fit: cover;
+}
+
+.input {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  width: 100%;
+}
+.input:focus {
+  border: 2px solid var(--primary);
+}
+
+textarea.input {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* uilities end */
+
+/* media  */
+
+@media (max-width: 786px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header .info p {
+    font-size: 1rem;
+  }
+}
